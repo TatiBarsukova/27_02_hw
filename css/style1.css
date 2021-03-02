@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 
@@ -13,7 +20,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 5px 0 10px;
     font-family: 'Lato', sans-serif;
 }
@@ -57,8 +65,12 @@ body {
 /* About*/
 
 .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 30px 80px;
 }
 
@@ -82,18 +94,26 @@ body {
 
 .about__img img {
     display: block;
+    -webkit-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
     transition: opacity 1s linear;
 }
 
 .about__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 110px 60px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
     opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
     transition: opacity 1s linear;
 }
 

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap');
 
 body {
@@ -12,7 +19,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #b07cf7;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 5px 0 10px;
 }
 
@@ -47,8 +55,11 @@ body {
 
 /* About */
 .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 165px;
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -67,14 +78,20 @@ body {
 }
 
 .coctail_image {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%), to(black)), url(../img/cocktail.jpg);
+    background-image: -o-linear-gradient(top, transparent, 80%, black), url(../img/cocktail.jpg);
     background-image: linear-gradient(to bottom, transparent, 80%, black), url(../img/cocktail.jpg);
 }
 
 .soup_image {
+    background-image:-webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%), to(black)), url(../img/soup.jpg);
+    background-image:-o-linear-gradient(top, transparent, 80%, black), url(../img/soup.jpg);
     background-image:linear-gradient(to bottom, transparent, 80%, black), url(../img/soup.jpg);
 }
 
 .raspberries_image {
+    background-image:-webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%), to(black)),  url(../img/raspberries.jpg);
+    background-image:-o-linear-gradient(top, transparent, 80%, black),  url(../img/raspberries.jpg);
     background-image:linear-gradient(to bottom, transparent, 80%, black),  url(../img/raspberries.jpg);
 }
 
@@ -136,7 +153,8 @@ body {
 .button__button {
     display: inline-block;
     position: relative;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     background-color: #f72b3b;
     text-decoration: none;
     padding: 20px 43px;
