@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 5px 0 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Section */
+.section__header {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.section__title {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8.95px;
+}
+
+.section__title::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    margin: 20px auto 40px;
+    background-color: #dddbdb;}
+
+.section__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/* About*/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 80px;
+}
+
+.about__item {
+    width: 269px;
+    height: 268px;
+    position: relative;
+}
+
+.about__item:hover .about__img img{
+    opacity: 0;
+}
+
+.about__item:hover .about__icon {
+    opacity: 1;
+}
+
+.about__img{
+    background: #19b5dc;
+}
+
+.about__img img {
+    display: block;
+    transition: opacity 1s linear;
+}
+
+.about__icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 110px 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.icon__fon {
+    width: 42px;
+    height: 42px;
+    background-color: #5ecbe6;
+    margin: 3px;
+}
+
+.twitter {
+    width: 21px;
+    height: 19px;
+    margin: 12px 10px;
+}
+
+.facebook {
+    width: 11px;
+    height: 23px;  
+    margin: 10px 15px;
+}
+
+.google {
+    width: 23px;
+    height: 23px;
+    margin: 10px 10px;
+}
+
+.about__name {
+    line-height: 18px;
+    text-align: left;
+    color: #282528;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.name_small {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 18px;
+}
